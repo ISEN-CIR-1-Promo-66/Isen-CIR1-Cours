@@ -148,7 +148,7 @@ Exemple :
 
   Avec /f/ : A \rightarrow B, /g/ : A' \rightarrow B', on a :
 
-  (/f/ = /g/) \Leftrightarrow ((A = C) \land (A' = B') \land (\forall \epsilon \in A (/f/ (\epsilon) = /g/ (\epsilon))
+  (/f/ = /g/) \Leftrightarrow ((A = A') \land (B = B') \land (\forall \epsilon \in A (/f/ (\epsilon) = /g/ (\epsilon))
 
 - *L'identité* de A (ou application identique de A, noté id), est définie comme une application de A \rightarrow A, tel que : \forall \epsilon \in A (id(\epsilon) = \epsilon)
 
