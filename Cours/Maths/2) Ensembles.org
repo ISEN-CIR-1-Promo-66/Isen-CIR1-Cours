@@ -10,6 +10,7 @@
 - [[#les-applications][Les Applications]]
   - [[#fonctions][Fonctions]]
   - [[#applications][Applications]]
+  - [[#injection-surjection-bijection][Injection, Surjection, Bijection]]
 
 * Qu'est qu'un ensemble ?
 
@@ -163,3 +164,45 @@ Exemple :
   + \forall \epsilon \in E' (/f/ _{|E'}(x) = /f/ (x))
 
   Qu'est-ce-que cela signifie (c'est tricky je l'admet mais le concept est plutôt trivial). Une restriction d'une application /f/ est simplement /f/ mais définie sur une partie de l'ensemble de départ de /f/.
+
+
+- La *composition des applications*
+
+    Soit A, B, C et /f/ : A \rightarrow B et /g/ : B \rightarrow C. On note /g/ \odot /f/ tel que :
+
+     + \forall x \in A ((/g/ \odot /f/) (x) = /g/ (/f/ (x)))
+
+    La composition est associative.
+
+
+** Injection, Surjection, Bijection
+
+*** Injection
+
+Une application /f/ : \Phi \rightarrow \Psi est dit *injective* si elle respecte cette proposition :
+
+- \forall (x,y) \in \Phi ² (/f/ (x) = /f/ (y) \Rightarrow x = y)
+
+Autrement dit, que chaque élément de \Psi admet *au plus un antécedent* de \Phi par /f/ (1 ou aucun).
+
+*Exemple:* (x \rightarrow x²) est injective de R+ vers R, mais pas de R vers R.
+
+*** Surjection
+
+Une application /f/ : \Phi \rightarrow \Psi est dit *surjective* si elle respecte cette proposition :
+
+- \forall y \in \Psi, \exists x \in \Phi (y = /f/ (x))
+
+Autrement dit, que chaque élément de \Psi admet *au moins un antécédent* de \Phi par /f/ (1 ou plusieurs).
+
+Exemple : (x \rightarrow x²) est une surjection de R vers R+, mais pas de R vers R.
+
+*** Bijection
+
+Une application /f/ : \Phi \rightarrow \Psi est dit *bijective* si elle respecte cette proposition :
+
+- \forall y \in \Psi, \exists! x \in \Phi (y = f(x))
+
+Autrement dit, que /f/ est *surjective et bijective*. (que l'equation
+y \in \Psi = /f/ (x \in Phi) admet une unique solution)
+
