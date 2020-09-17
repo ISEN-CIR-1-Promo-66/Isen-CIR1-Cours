@@ -1,0 +1,61 @@
+#+TITLE: Ressources Pour Aller Plus Loin
+#+TITLE: Ressources Pour Aller Plus Loin
+
+* Table of Contents :toc:
+- [[#disclaimer][Disclaimer]]
+- [[#pour-les-débutants-][Pour les débutants +++]]
+  - [[#everything-you-need-to-ace-math-in-one-big-fat-notebook-the-complete-middle-school-study-guide-by-ouida-newton][Everything You Need to Ace Math in One Big Fat Notebook The Complete Middle School Study Guide by Ouida Newton]]
+- [[#pour-les-gens-normaux][Pour les gens normaux]]
+  - [[#pure-mathematics-for-beginners-a-rigorous-introduction-to-logic-set-theory-abstract-algebra-number-theory-real-analysis-topology-complex-analysis-and-linear-algebra][Pure Mathematics for Beginners: A Rigorous Introduction to Logic, Set Theory, Abstract Algebra, Number Theory, Real Analysis, Topology, Complex Analysis, and Linear Algebra]]
+- [[#pour-les-timbrés-cest-celui-que-je-lis-actuellement][Pour les timbrés (c'est celui que je lis actuellement)]]
+  - [[#the-haskell-road-to-logic-maths-and-programming][The Haskell Road to Logic, Maths and Programming]]
+- [[#pour-les-gens-qui-naiment-pas-les-maths-actuelles-voici-une-solution][Pour les gens qui n'aiment pas les maths actuelles, voici une solution]]
+  - [[#lambda-calculus-and-combinators-an-introduction][Lambda-calculus and Combinators an introduction]]
+  - [[#the-homotopy-type-theorie][The Homotopy Type Theorie]]
+
+* Disclaimer
+
+Attention ! Je ne vous incite pas du tout à aller sur ce lien https://1lib.eu/ et à télécharger les ressources de manière illégal, ok ?
+
+
+* Pour les débutants +++
+
+J'espère que personne ne devra le lire, mais je le met quand même. C'est la bible des maths calculatoires, de maths que tu apprends pre-terminale en gros. Avec de beaux dessins, bien pour les enfants. Si vous sentez que vos bases sont nulles (mais genre vraiment nulles) allez le lire.
+
+** Everything You Need to Ace Math in One Big Fat Notebook The Complete Middle School Study Guide by Ouida Newton
+
+[[https://covers.zlibcdn2.com/covers/books/9b/be/f1/9bbef14cd4c84f24b18dbccc8392d98c.jpg]]
+
+
+
+* Pour les gens normaux
+
+Un livre cool qui couvre pas mal d'informations, avec une courbe de progression super friendly. Je l'ai commencé mais pas fini. Mais de toute manière, il est correct.
+
+** Pure Mathematics for Beginners: A Rigorous Introduction to Logic, Set Theory, Abstract Algebra, Number Theory, Real Analysis, Topology, Complex Analysis, and Linear Algebra
+
+[[https://covers.zlibcdn2.com/covers/books/dd/09/7f/dd097f5bcca61afb3ef9a3fc3210de4f.jpg]]
+
+
+* Pour les timbrés (c'est celui que je lis actuellement)
+
+Ne vous laissez pas avoir en vous disant "ouais mais c'est quoi haskell ? je m'en fous je veux faire des maths, pas ce truc". Premièrement, vous DEVEZ apprendre haskell pour votre bien (je rigole pas), et deuxièment, ce livre traite des maths bien plus précisement et efficacement que le cours de l'ISEN. Si vous le lisez, et le comprenez, je vous assure que quelque chose en vous va se reveiller, et vous vous améliorerez très nettement en maths. En plus, ça va vous faire une initiation à la prog c:
+
+** The Haskell Road to Logic, Maths and Programming
+
+[[https://covers.zlibcdn2.com/covers/books/ff/1d/03/ff1d033eac913a9a66dafce2cae839ad.jpg]]
+
+* Pour les gens qui n'aiment pas les maths actuelles, voici une solution
+
+Pourquoi apprendre les maths, si on aime pas ? Et bien, ne les apprenez pas ! Apprenez plutôt le saint et ultime *lambda-calculus*. (Je troll, lancez-vous dedans juste par curiosité si vous avez du temps à perdre). En réalité, c'est un mix plutôt homogène d'informatique et de maths.
+
+** Lambda-calculus and Combinators an introduction
+
+[[https://covers.zlibcdn2.com/covers/books/e0/ae/ad/e0aeadd3c00088ed9f8d0fc5c5895e65.jpg]]
+
+
+Et un dernier pour la route :
+
+** The Homotopy Type Theorie
+
+[[https://covers.zlibcdn2.com/covers/books/60/2c/1b/602c1bfb958aeb067abecb90655ebd0a.jpg]]
