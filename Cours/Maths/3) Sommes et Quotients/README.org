@@ -1,0 +1,3 @@
+#+TITLE: Readme
+
+je suis passé par du latex, ainsi pour voir le cours, ouvrez le pdf (github sais les lire, sinon vous pouvez le télécharger). J'ai mis le code à disposition, je ne promet pas du code très idiomatique, mais bon, on sait jamais.

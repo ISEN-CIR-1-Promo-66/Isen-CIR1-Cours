@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\title{3) Sommes et Quotients (rapide)}
+\author{Pim - Simon Hauguel}
+\date{16-09-2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Somme}
+Ce cours n'est qu'une (très brève) introduction aux sommes et quotients, il vous permettra de comprendre le cours plus aisement. (j'avais pas trop de temps, et en plus le latex c'est long)
+\subsection{Simple réecriture}
+
+En maths, il nous est très fréquent de tomber sur des sommes assez importantes et longues à écrire. Ainsi, il nous arrive parfois d'écrire ces sommes en omettant certains termes, laissant le lecteur déduire des termes manquants pas un pattern simple à déterminer.\\\\
+Exemple : $1 + 2 + 3 + ... + 98 + 99 + 100$\\
+On peut facilement identifier cette somme comme étant la somme des entiers allant de 1 à 100.
+
+Bien, mais les mathématiques nous donne une écriture plus élégante et rigoureuse.
+
+Une somme $x_{1} + x_{2} + x_{3}+ ... + x_{i-1} + x_{i}$\\
+Va s'écrire
+
+\begin{center}
+
+  \[\sum_{i=k}^n x_{i}\]
+
+\end{center}
+
+\subsection{Keske ?}
+
+Si cette chose vous fait peur, n'ayez crainte.\\
+\begin{itemize}
+  \item Le symbole $\sum$ nous indique simplement que nous allons avoir affaire à une somme. Rien de bien compliqué.
+  \item Le $i=k$ pose 2 variables, $i$ qui représente le rang de $x$ tout au long de notre somme. $k$ le rang initial de $x$
+  \item Le $n$ représente lui le rang final de $x$
+  \item Le $x_{1}$ quand à lui représente les valeurs succésives de la somme.
+\end{itemize}
+
+Un exemple est le bien venu je suppose. Prenons notre somme du départ, celle des entiers de 1 à 100. On l'écrira ainsi :
+\begin{center}
+  \[\sum_{i=1}^{100} i\]
+\end{center}
+
+Il est possible d'appliquer une fonction à chaque élément de notre somme, par exemple, la somme \[\frac{1}{1} + \frac{1}{2} + ... +\frac{1}{9} + \frac{1}{10} \] s'écrira
+
+\begin{center}
+  \[\sum_{i=1}^{10} \frac{1}{i}\]
+\end{center}
+La lettre $i$ est sans importance, je peux très bien l'appeler $k$
+
+\subsection{Premières propriétés}
+
+
+Ettonement, il y a assez peu de choses à savoir, et si vous avez compris le principe précédent, les propriétés vont sembleront, avec un peu de réflexions, triviales.
+
+Propriété 1 : \[\forall \lambda \in \mathbb{C} \sum_{i=k}^{n}\lambda x_{i} = \lambda \sum_{i=k}^{n}x_{i}\]\\
+C'est assez trivial, simple factoriastion par $\lambda$\\
+Propriété 2 : \[\sum_{i=k}^{n}(x_{k}+y_{k}) = \sum_{i=k}^{n}x_{k} +  \sum_{i=k}^{n}y_{k}\]\\
+Simple découpage d'une somme
+
+\subsubsection{Changement d'indice}
+
+Avec $n, p \in \mathbb{N}^{2} p \le n, m \in mathbb{Z}$, on a :
+
+\[\sum_{k=p}^{n} x_{m-k} = \sum_{i=m-n}^{m-p} x_{i}\]\\
+
+C'est ce qu'on appelle un changement d'indice. Si vous ne comprenez pas pourquoi elles sont égales, simplement essayez par vous-même sur des cas simples.
+
+\subsubsection{Téléscopage de somme}
+
+Quelques soit les nombres $x_{1},x_{2},x_{3}\cdots,x_{n+1}$ réels ou complexes, on a :
+\begin{center}
+  \[\sum_{k=0}^{n} (x_{k+1}-x_{k}) = x_{n+1}-x_{0}\]
+\end{center}
+Démonstration :
+\begin{center}
+  \[\sum_{k=0}^{n} (x_{k+1}-x_{k})\] =\\
+  \[\sum_{k=0}^{n} (x_{k+1}) - \sum_{k=0}^{n}x_{k}\] on scinde notre somme en deux\\
+  \[\sum_{i=1}^{n+1} x_{i} - \sum_{k=0}^{n}x_{k}\] on fait le changement d'indice $i = k+1$ dans la première somme\\
+  \[\sum_{i=1}^{n} x_{i}+x_{n+1} - (\sum_{k=1}^{n}x_{k} + x_{0})\] on met en évidence les termes communs des deux sommes.\\
+  \[\sum_{i=1}^{n} x_{i}+x_{n+1} - \sum_{k=1}^{n}x_{k} - x_{0}\]\\
+  $x_{n+1}-x_{0}$ et voilà !
+\end{center}
+\section{Produits}
+
+  Il existe aussi une notation pour les produits, noté cette fois $\prod$
+  Exemple, le produit $x_{1} * x_{2} \cdots * x_{n}$ sera noté $\prod_{i=1}^{n}x_{i}$\\
+  La logique étant très proche de celle des sommes, ce chapitre sera donc beaucoup plus court.
+
+  \subsection{Propriétes}
+    Propriété 1: $$\forall n \in \mathbb{N}^{*}, \prod_{k=1}^{n}\lambda = \lambda^{n}$$\\
+    Propriété 2: $$\forall m \in \mathbb{N}^{*}, \forall n \ge m+1, \prod_{k=1}^{n}x_{k} =  (\prod_{k=1}^{m}x_{k}) * (\prod_{k=m+1}^{n}x_{k})$$
+\end{document}
