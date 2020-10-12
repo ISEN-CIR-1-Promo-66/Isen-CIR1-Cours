@@ -3,3 +3,4 @@
 
 *Attention, cela n'a pas pour but de remplacer le cours ! Il est juste présent pour vous aider à le comprendre. Il ne faut surtout pas vous appuyer totalement dessus. Certains points seront passés (car j'ai la flemme).*
 Je vais mettre les corrections des DS et TD mais après seuleument les avoir corrigés en cours.
+c:
