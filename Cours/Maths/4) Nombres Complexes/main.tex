@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\newtheorem{defi}{Définition}
+\newtheorem{form}{Formules}
+\title{(4) Nombres Complexes}
+\author{Pim-Simon Hauguel}
+\date{13-10-2020 (Trop tard)}
+
+\begin{document}
+
+
+\maketitle
+
+\tableofcontents
+
+\section{Excuses}
+Bon déjà, première chose : Je suis désolé de vous avoir laché durant ces trop longs 30 jours qui nous sépare de mon dernier paper. La prochaine fois, il faut me taper sur les doigts ! Bref, je vais essayer de reprendre le rythme que je m'étais imposé au début et arreter de faire du hors programme. Commencons !
+
+\section{Qu'est-ce qu'un nombre premier ?}
+\begin{defi}[Définition et écriture]
+  L'ensemble des nombres complexes est noté $\mathbb{C}$, on dit que
+  $\mathbb{R} \subset \mathbb{C}$.
+  L'unité dite imaginaire, est noté $i$ et est définie comme : $i = \sqrt{-1}$, donc que $i^{2} = -1$.
+  La forme $z = a + ib$ est appelée \textit{notation cartésienne} de z (z est complexe).
+  Avec $a$ la partie réelle ($Re(z)$), et $b$ la partie imaginaire ($Im(z)$). ($a,b \in \mathbb{R}^{2}$)
+\end{defi}
+\subsection{Ce que l'on en déduit}
+Avec ces informations, certaines informations peuvent être remarquées :\\
+\begin{itemize}
+  \item $\forall z \in \mathbb{C},\exists! (a,b) \in \mathbb{R}^{2}(z = a + ib)$\\
+    Pour le dire d'une manière plus accesible, un nombre complexe $z$ a une unique écriture cartésienne.
+  \item $i\mathbb{R}$ est l'ensemble des imaginaires purs. Des exemples d'imaginaires purs ?
+    \begin{itemize}
+      \item $0 + 7i = 7i$
+      \item $0 + i = i$
+      \item $i^{3} = i^{2} * i = -1 * i = -i)$
+    \end{itemize}
+  \item Il existe aussi des réels purs, le principe est le même, simplement c'est la partie imaginaire qui est nulle.
+\end{itemize}
+\subsubsection{Le conjugué}
+\begin{form}[Formule stricte]
+  Le conjugué d'un nombre complexe $z$ est défini ainsi :
+
+\centering{$conjugue(z) = \overline{z} = Re(z) - Im(z)$}
+\end{form}
+Pour résumé, le conjugué d'un nombre complexe est simplement ce même nombre, mais en opposant sa partie imaginaire.\\
+On peut donc en déduire cela : $\overline{\overline{z}} = z$
+\subsubsection{Minis Exos 1}
+En connaissant ces informations, veuillez généraliser ces formules (trouver le $?$):
+\begin{itemize}
+  \item $\forall z \in \mathbb{C}(z*\overline{z} = ?)$
+  \item $\forall z \in \mathbb{C}(z + \overline{z} = ? \in ?)$
+  \item $\forall z \in \mathbb{C}(z \in i\mathbb{R} \Leftrightarrow \overline{z} = ?$
+\end{itemize}
+(bon ils étaient triviaux, mais bon...)
+
+\section{Représentation des nombres complexes}
+On peut exprimer les nombres complexes comme des points dans un plan.\\
+Posons $z = a + ib$, $a$ va représenter l'abscisse, $b$ l'ordonnée. (Il est très facile de se visualiser cela dans le plan réel, cependant, nous sommes bien ici dans le plan complexe)\\
+Par exemple, le nombre $8 + 7i$ sera de coordonnées $(8,7)$\\$-4 + 0.5i$ en $(-4,0.5)$\\
+
+Posons $M$, un point du plan complexe de centre O,  de coordonnées $(a,b)$, quel sera sa longueur ? Il est évident que l'on répondra formule de pythagore, avec du coup $OM = \sqrt{a^{2} + b^{2}}$. Et bien je suis d'accord ! Mais avec les nombres complexes, on appelera cette longueur le module de $a + ib$.\\
+\begin{form}{Module}
+$\centering{\forall z \in \mathbb{C}(|z| = \sqrt{z\overline{z}} = \sqrt{a^{2} + b^{2}})~with~z~=~a~+~ib}$
+\end{form}
+
+\subsection{Les Vecteurs}
+Les grandeurs dites scalaires, sont caractérisées par un seul nombre, a contrario des grandeurs dites vectorielles qui sont caractérisées par $n$ nombres dans une dimension $n$ (2 dans le plan, 3 dans l'espace...)
+
+\begin{defi}[Vecteur]
+  Un vecteur est caractérisé par :
+  \begin{itemize}
+    \item Une longueur
+    \item Un sens
+    \item Une direction
+  \end{itemize}
+\end{defi}
+
+Le vecteur de longueur 0 est unique et noté $\overrightarrow{0}$
+
+\begin{form}[Addition]
+Dans le plan, deux vecteurs $\overrightarrow{u} (x,y)$, $\overrightarrow{v} (x',y')$ ont pour somme :\\
+
+\centering{$\overrightarrow{u} + \overrightarrow{v} = (x+x',y+y')$}
+\end{form}
+Le principe pour la soustraction reste le même.
+
+\begin{form}[Multiplication]
+  Dans le plan, $\overrightarrow{u} (x,y)$ et $\alpha \in \mathbb{R}$, alors
+  \centering{$\alpha\overrightarrow{u} = (\alpha x, \alpha y)$}
+\end{form}
+
+\begin{defi}[Coolinearité]
+  Deux vecteurs sont colineraires si ils ont la même direction, c'est à dire qu'il existe $\alpha \in \mathbb{R}$ tel que
+  $\overrightarrow{u} = \alpha \overrightarrow{v}$
+\end{defi}
+
+\begin{defi}[Produit Scalaire]
+  Comme son nom le dit si bien, le produit scalaire renvoie un scalaire (grosso merdo un nombre) et pas un vecteur.\\
+  Dans le plan $\overrightarrow{u} (x,y)$, $\overrightarrow{v} (x',y')$, alors\\
+
+  \begin{itemize}
+    \item $\overrightarrow{u} . \overrightarrow{v} = xx' + yy'$ ; où `.` dénote du produit scalaire
+    \item $\overrightarrow{u} . \overrightarrow{v} = |\overrightarrow{u}| |\overrightarrow{v}| \cos{\Theta}$  ; où $\Theta$
+      dénote de l'angle formé par les 2 vecteurs.
+  \end{itemize}
+\end{defi}
+
+\subsection{Forme trigonométrique}
+TODO
+
+
+
+
+
+
+
+
+\section{Solution minis-exos}
+\subsection{Minis Exos 1}
+\begin{itemize}
+  \item $\forall z \in \mathbb{C}(z*\overline{z} = a^{2}+b^{2})$
+  \item $\forall z \in \mathbb{C}(z + \overline{z} = 2a \in \mathbb{C})$
+  \item $\forall z \in \mathbb{C}(z \in i\mathbb{R} \Leftrightarrow \overline{z} = -z)$
+\end{itemize}
+\end{document}
