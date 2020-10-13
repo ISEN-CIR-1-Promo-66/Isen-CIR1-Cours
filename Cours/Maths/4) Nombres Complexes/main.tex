@@ -110,20 +110,91 @@ Le principe pour la soustraction reste le même.
 \end{defi}
 
 \subsection{Forme trigonométrique}
-TODO
+\begin{defi}[Forme Trigonométrique d'un nombre complexe]
+Un point M dans le plan est donc représentable soit par son abscisse/ordonnée, soit par la longueur du vecteur $\overrightarrow{OM}~note~r$ ainsi que l'angle que forme ce vecteur avec la droite des abscisses noté $\Theta$\\
+Avec $z = a + ib$, on a donc $z = r(cos\Theta + isin\Theta)$\\
+Cette forme est appellée, forme trigonométrique de $z$, où $r = |z|$, et $\Theta$ est appellé argument de $z$ ; $arg(z) = \Theta + 2k\pi,~k \in \mathbb{Z}$
+\end{defi}
+Que signifie ce $2k\pi$, nous savons que $2\pi$ radian = $360°$, donc que si nous tournons de $2\pi$ en radian, nous allons faire un tour complet. Or, un truc complet, signifie donc que nous sommes revenue à notre position initiale. Notons $a = n(cos\Theta + isin\Theta)$, rajoutons $2\pi$ à $\Theta$. Le fait que cos et sin soient cyclique sur $2\pi$, fait donc que $\Theta\equiv\Theta+2k\pi [2\pi]$. Lisez 'theta est congru à theta + 2 k pi modulo 2 pi'.
 
+\subsection{Forme exponentielle}
+\begin{defi}[Forme exponentielle d'une nombre complexe]
+  Connaissant le module et l'argument de z, nous pouvons écrire que :\\
 
-
-
-
-
-
-
-\section{Solution minis-exos}
-\subsection{Minis Exos 1}
+  \centering{$z = re^{i\Theta}$}
+\end{defi}
+Propriétes importantes :
 \begin{itemize}
-  \item $\forall z \in \mathbb{C}(z*\overline{z} = a^{2}+b^{2})$
-  \item $\forall z \in \mathbb{C}(z + \overline{z} = 2a \in \mathbb{C})$
-  \item $\forall z \in \mathbb{C}(z \in i\mathbb{R} \Leftrightarrow \overline{z} = -z)$
+    \item Formule d'Euler : $$\forall \Theta \in \mathbb{R},~cos\Theta~=~\frac{e^{i\Theta}+e^{-i\Theta}}{2}~et~sin\Theta~=~\frac{e^{i\Theta}-e^{-i\Theta}}{2i}$$
+    \item Formule de Moivre : $(cos\Theta+isin\Theta)^{n} = cos(n\Theta) + isin(n\Theta)$
 \end{itemize}
+On peut ainsi linéariser $\cos^{n}\Theta$ et $\sin^{n}\Theta$, voici pour $\cos$:
+
+\begin{center}
+  $$Avec~la~formule~d'Euler~:\cos^{n}\Theta$$
+  $$=~(\frac{e^{i\Theta}+e^{-i\Theta}}{2})^{n}$$
+  $$= \frac{1}{2^{n}}(e^{i\Theta}+e^{-i\Theta})^{n}$$
+  $$Avec~le~binome~de~Newton~:~(x+y)^{n} = \sum_{k=0}^{n}{\binom{n}{k}x^{k}y^{n-k}} = \sum_{k=0}^{n}{\binom{n}{k}x^{n-k}y^{k}}$$
+  $$= \frac{1}{2^{n}}\sum_{k=0}^{n}{\binom{n}{k}(e^{i\Theta})^{(n-k)}(e^{-i\Theta})^{k}}$$
+  $$= \frac{1}{2^{n}}\sum_{k=0}^{n}{{\binom{n}{k}e^{i\Theta(n)-i\Theta(k)}e^{-i\Theta(k)}}}$$
+  $$= \frac{1}{2^{n}}\sum_{k=0}^{n}{\binom{n}{k}e^{i\Theta(n-2k)}}$$
+\end{center}
+
+\subsection{Minis-exos 2}
+\begin{itemize}
+  \item Les vecteurs $\overrightarrow{u}(7,14),~\overrightarrow{v}(1.4, 2.8)$ sont-ils colineraires ?\\
+    Donnez leur produit scalaire, leur addition ainsi que leur soustraction
+  \item Donnez la forme trigonométrique et exponentielle de : $7 + 8i$, $5 - 4i$, $\pi - e^{7i}$
+  \item Linearisez $sin^{n}\Theta$
+\end{itemize}
+
+\section{Racine n-ème}
+
+\subsection{Racine n-ème signification et comment les trouver}
+\begin{defi}
+  Les racines n-ème d'un nombre complexe $a + ib$ sont tous nombres complexes $z$ vérifiant :
+  \begin{center}
+    $z^{n} = a + ib$
+  \end{center}
+\end{defi}
+Ces racines n-ème peuvent être trouvés à l'aide de cette (trop grosse) formule:
+\[z_{k} = \sqrt[n]{r}(\cos(\frac{\Theta}{n} + \frac{2k\pi}{n}) + i\sin(\frac{\Theta}{n} + \frac{2k\pi}{n})) = \sqrt[n]{r}e^{i(\frac{\Theta}{n} + \frac{2k\pi}{n})}\] avec $k \in\{x \in\mathbb{N}~|~x~\leq~n-1\}$, $\Theta=\arg (a + ib)$, $r = |a + ib|$\\
+Exemple d'utilisation:
+Posons l'équations $z^{3} = a + ib$, les solutions seront donc:
+\begin{itemize}
+  \item $\sqrt[3]{|a + ib|}e^{i (\frac{\arg (a + ib)}{3} +\frac{2*0\pi}{3})}$
+  \item $\sqrt[3]{|a + ib|}e^{i (\frac{\arg (a + ib)}{3} +\frac{2*1\pi}{3})}$
+  \item $\sqrt[3]{|a + ib|}e^{i (\frac{\arg (a + ib)}{3} +\frac{2*2\pi}{3})}$
+\end{itemize}
+
+\subsection{Racine n-ème de L'unité}
+Les racines n-ème de l'unité sont tous $z$ vérifiant $z^{n} = 1$\\
+Pour résoudre les racines n-ème de l'unité, posons $\omega_{n} = e^{i\frac{2\pi}{n}}$, les solutions seront les $k$ puissances de $\omega_{n}$, avec $k \in \{x \in\mathbb{N}~|~x~\leq~n-1\}$\\
+Posons l'équations $z^{3} = 1$, les solutions seront donc:
+\begin{itemize}
+  \item $\omega_{3}^{0}=e^{\frac{i2\pi*0}{3}}$
+  \item $\omega_{3}^{1}=e^{\frac{i2\pi*1}{3}} $
+  \item $\omega_{3}^{2}=e^{\frac{i2\pi*2}{3}}$
+\end{itemize}
+
+\subsection{Minis Exos 3}
+\begin{itemize}
+  \item Trouvez les racines n-ème de $z^{7} = 7 + 7i$
+  \item trouvez les racinzs n-ème de l'unité de $z^{10}$
+\end{itemize}
+
+\section{Géometrie dans le plan complexe}
+
+Bon je suppose que la géometrie basique dans le plan complexe est assez trivial, et surtout déjà vu en terminale, pour faire une partie du cours dessus. je vais donc direct commencé par les transformations.
+
+\subsection{Transformations}
+Un transformation d'un plan $\mathbb{P}$ est une bijection dans lui-même. Ainsi, il associe chacun des ses points, noté $a$ à un autre unique points $b$, tel que $a,b \in \mathbb{P}^{2}$. Notons $T$ cette transformation.\\
+Le fait que ce soit une bijection, on garde ses propriétés. Comme pour une application, la transformation réciproque est notée $T^{-1}$.\\
+Une transformation est une similitude si elle conserve le rapport de distances. Pour simplifier, prenons pour tous duo de points $a,b$ qui sont distants de $n$ unité(s) dans le plan $\mathbb{P}$, alors ils seront séparés de $\lambda n$ unité(s) après transformation $T$ de $\mathbb{P}$ avec $\lambda > 0$.\\
+On dit que le point $A$ est invariant $ssi$ $A = T(A)$
+
+\begin{defi}
+Une similitude directe est une transformation tel que, $T(z)=az+b$ avec $(a,b) \in \mathbb{C}^{*} * \mathbb{C}$
+\end{defi}
+TODO
 \end{document}

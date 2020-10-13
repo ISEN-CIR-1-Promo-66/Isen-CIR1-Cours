@@ -1,0 +1,53 @@
+\message{ !name(main.tex)}\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\newtheorem{defi}{Définition}
+\newtheorem{form}{Formules}
+\title{(4) Nombres Complexes}
+\author{Pim-Simon Hauguel}
+\date{13-10-2020 (Trop tard)}
+
+\begin{document}
+
+\message{ !name(main.tex) !offset(136) }
+\section{Racine n-ème}
+
+\subsection{Racine n-ème signification et comment les trouver}
+\begin{defi}
+  Les racines n-ème d'un nombre complexe $a + ib$ sont tous nombres complexes $z$ vérifiant :
+  \begin{center}
+    $z^{n} = a + ib$
+  \end{center}
+\end{defi}
+Ces racines n-ème peuvent être trouvés à l'aide de cette (trop grosse) formule:
+\[z_{k} = \sqrt[n]{r}(\cos(\frac{\Theta}{n} + \frac{2k\pi}{n}) + i\sin(\frac{\Theta}{n} + \frac{2k\pi}{n})) = \sqrt[n]{r}e^{i(\frac{\Theta}{n} + \frac{2k\pi}{n})}\] avec $k \in\{x \in\mathbb{N}~|~x~\leq~n-1\}$, $\Theta=\arg (a + ib)$, $r = |a + ib|$\\
+Exemple d'utilisation:
+Posons l'équations $z^{3} = a + ib$, les solutions seront donc:
+\begin{itemize}
+  \item $\sqrt[3]{|a + ib|}e^{i (\frac{\arg (a + ib)}{3} +\frac{2*0\pi}{3})}$
+  \item $\sqrt[3]{|a + ib|}e^{i (\frac{\arg (a + ib)}{3} +\frac{2*1\pi}{3})}$
+  \item $\sqrt[3]{|a + ib|}e^{i (\frac{\arg (a + ib)}{3} +\frac{2*2\pi}{3})}$
+\end{itemize}
+
+\subsection{Racine n-ème de L'unité}
+Les racines n-ème de l'unité sont tous $z$ vérifiant $z^{n} = 1$\\
+Pour résoudre les racines n-ème de l'unité, posons $\omega_{n} = e^{i\frac{2\pi}{n}}$, les solutions seront les $k$ puissances de $\omega_{n}$, avec $k \in \{x \in\mathbb{N}~|~x~\leq~n-1\}$\\
+Posons l'équations $z^{3} = 1$, les solutions seront donc:
+\begin{itemize}
+  \item $\omega_{3}^{0}=e^{\frac{i2\pi*0}{3}}$
+  \item $\omega_{3}^{1}=e^{\frac{i2\pi*1}{3}} $
+  \item $\omega_{3}^{2}=e^{\frac{i2\pi*2}{3}}$
+\end{itemize}
+
+\subsection{Minis Exos 3}
+\begin{itemize}
+  \item Trouvez les racines n-ème de $z^{7} = 7 + 7i$
+  \item trouvez les racinzs n-ème de l'unité de $z^{10}$
+\end{itemize}
+
+
+\message{ !name(main.tex) !offset(147) }
+
+\end{document}
