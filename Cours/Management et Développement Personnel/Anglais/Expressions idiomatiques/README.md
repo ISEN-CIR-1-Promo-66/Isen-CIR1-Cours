@@ -2,3 +2,27 @@
 Cette base est fournie du blog http://www.integrerlx.fr
 
 Si vous avez des suggestions, n'hésitez pas à ouvrir une issue ou réaliser un Pull request! 
+
+## Extrait
+
+*Pour enrichir vos compositions, et en complément de celles données dans livre, pas vraiment besoin de savoir dire des mots comme nettoyeur vapeur, par exemple : il est plus utile des connaître des expressions idiomatiques. Voici donc des exemples d’expressions idiomatiques en anglais, dont vous pouvez vous inspirer pour vos compositions. Attention, n’oubliez d’en rechercher d’autres, les vôtres, et évitez de “surjouer” en voulant les placer à tout bout de champ.*
+
+-   **A cock and bull story** : Une histoire à dormir debout. *To Amy, his justifications were no more than a cock and bull story.*
+-   **To pass with flying colors** : Réussir haut la main. *Amber passed her Spanish exam with flying colors.*
+-   **To be as easy as pie** : Etre simple comme bonjour. *Answering this question was as easy as pie for the Prime Minister.*
+-   **To look the picture of health/happiness** : Respirer la santé/le bonheur. *Now that he’s gone, she looks the picture of happiness.*
+-   **To be beside oneself with joy/anger** : Etre fou de joie / hors de soi. *When she received her well-deserved prize, Claire was beside herself with joy..*
+-   **In two shakes of a lamb’s tail** : Très rapidement, sans difficulté. *Andy will clean his mess in two shakes of a lamb’s tail.*
+-   **To act on the sly** : Agir en douce. *To surprise the shareholders, the committee had to act on the sly..*
+-   **To jump the gun** : Aller plus vite que la musique. *Paul shouted at Laura before she could explain herself. Later, he apologized for jumping the gun.*
+-   **To be reluctant** : Se montrer réticent. *Grace was reluctant to announce a slash in the budget, but eventually she had to face the facts.*
+-   **To keep one’s chin up** : Garder la tête haute. *In spite of losing twice at pool tonight, Mark kept his chin up.*
+-   **At a stone’s throw** : A deux pas, tout près. *Paul lives at a stone’s throw.*
+-   **To be all at sea** : Ne rien y comprendre. *Sam was all at sea in this project.*
+-   **To pick the brains of** : Demander conseil à (des experts). *The president picked the brains of every member before taking that decision.*
+-   **Straight from the horse’s mouth** : De source sûre. *The journalist informed us he heard the news straight from the horse’s mouth.*
+-   **To rock the boat** : Jouer les trouble-fêtes, ne pas coopérer. *The manager does not want anyone rocking the boat on this important project.*
+-   **To make matters worse** : pour ne pas arranger la situation. *To make matters worse, Polly decided to bail on us (nous laisser plantés là).*
+-   **To go out on a limb** : prendre un risque. *For his last of class, Chris had to go out on a limb.*
+-   **To take a turn for the better** : prendre meilleure tournure. *In the end, the situation took a turn for the better..*
+-   **To keep a stiff upper lip** : garder son calme face à l’adversité. *After the announcement of her failure, Johanna kept a stiff upper lip.*
